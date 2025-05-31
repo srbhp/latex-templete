@@ -1,0 +1,149 @@
+\documentclass{beamer}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{fancybox}
+\usepackage{wasysym}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+%%%%%%%%%%Modify default Color and style%%%%%%%%%%%%%%%%%%%%%%%%%%
+% defaults
+\useinnertheme[shadow]{rounded}
+\usecolortheme{spruce}
+% fonts
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setsansfont[BoldFont={FiraCode Nerd Font, Bold}]{FiraCode Nerd Font}
+
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+% set frametitle shadow and rounded in the buttom corners 
+
+
+\tcbuselibrary{skins, breakable}
+
+
+\setbeamertemplate{frametitle}
+{
+    \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,ht=1.8em,wd=\paperwidth,shadow=true,rounded = true]{frametitle}
+        \vbox{}\vskip-2ex%
+        \strut\insertframetitle\strut
+        \vskip-0.8ex%
+    \end{beamercolorbox}
+	\hfill
+	%\includegraphics[width=1cm]{logo}
+}
+
+
+
+
+\setbeamertemplate{itemize/enumerate subbody begin}{\begin{tcolorbox}[colback=white!5!white,colframe=blue!75!black,sharp corners=south]}
+\setbeamertemplate{itemize/enumerate subbody end}{\end{tcolorbox}}
+% hide navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Very Very long	Title of the Presentation that is so long that it will not fit in one line and will be wrapped to the next line}
+\subtitle{Subtitle of the Presentation that is also very long and will be wrapped to the next line if it is too long}
+\author{ author 1 \\ author 2 \\ author 3 \\ \vspace{0.5cm}}
+
+\institute{Sample  University  \\ \vspace{1cm}
+  %\includegraphics[scale=0.15]{imag2/wip.png}
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{Outline}
+	\begin{tcolorbox}[colback=red!5!white,colframe=red!35!black,sharp corners=northwest ]
+		\textbf{more} topics that are not listed here but will be discussed in the presentation.
+	\end{tcolorbox}
+\end{frame}
+
+\section{Introduction}
+
+
+\begin{frame}
+	\frametitle{Band Theory}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item \textbf{Band theory} : electrons in solids are not bound to individual atoms, but are shared by many atoms
+				\item \textbf{Fermi energy} : highest energy level occupied at absolute zero temperature
+				\item \textbf{Valence band} : band of energy levels occupied by electrons
+				\item \textbf{Conduction band} : band of energy levels that are empty at absolute zero temperature
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Metals have lot of electrons near Fermi energy
+				\item Resistivity increases with temperature \\
+				      due to \textbf{defects, lattice vibration }
+				\begin{itemize}
+					\item \textbf{Defects} : impurities, vacancies, dislocations
+					\item \textbf{Lattice vibration} : phonons
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\section{Results}
+\begin{frame}
+	\frametitle{Resistivity of Metals }
+
+	\begin{itemize}
+		\item \textbf{ Drude theory }: metals are good electrical conductors because electrons can move nearly freely between the atoms in solids
+
+		\item conductivity: \Large{ $\sigma \propto \tau \Rightarrow \rho \propto \tau^{-1} $ } \\
+
+		      $\tau$ : average lifetime of the electron between collision with other \textbf{electrons, impurities, lattice}
+		      \begin{align}
+			      \tau^{-1} & = \tau^{-1}_{imp} + \tau^{-1}_{el-el} + \tau^{-1}_{el-ph}\nonumber \\
+			      \rho      & = \rho_0 + aT^2 + bT^5 \nonumber
+		      \end{align}
+
+		      \textcolor{red}{Resistivity increases with Temperature}
+	\end{itemize}
+\end{frame}
+
+\section{Theory}
+\begin{frame}[plain]
+	\begin{alertblock}{Future Plan}
+		\begin{itemize}
+			\item Strong coupling between lead and impurity
+			\item Non-equilibrium effects
+			\item Ferromagnetic RKKY (?)
+			\item Generalize to multi-impurity
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+\section{Theory}
+\begin{frame}[plain]
+	\begin{block}{Future Plan}
+		\begin{itemize}
+			\item Strong coupling between lead and impurity
+			\item Non-equilibrium effects
+			\item Ferromagnetic RKKY (?)
+			\item Generalize to multi-impurity
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}[plain]
+	\begin{center}
+		{\fontsize{50}{60}\selectfont \textbf{ Thank You.}}
+	\end{center}
+\end{frame}
+\end{document}
