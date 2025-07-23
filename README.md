@@ -1,15 +1,24 @@
 # Latex-templete
 Style guide for latex  documents and beamer presentations. 
 
-LaTeX is a powerful and flexible typesetting system used to create professional-quality documents and presentations. While it can seem challenging for beginners, understanding a few fundamental structures makes working with LaTeX much easier. With practice, you can efficiently produce well-formatted documents and slides.
+LaTeX is a powerful and flexible typesetting system used to create professional-quality documents and presentations. While it can seem challenging for beginners, understanding a few fundamental structures makes working with LaTeX much easier. With practice, you can efficiently produce well-formatted documents and slides. This repo come a very simple templete to make a
+ppt.
+
+![sample](sample.png)
 
 ## Beamer
 Beamer is a latex package that allows you to create presentations.
 It is similar to PowerPoint, but it uses LaTeX for typesetting.
 (See [Beamer User Guide](https://ctan.org/pkg/beamer?lang=en) for more information.)
 
+### dependencies 
+
+- Fedora :
+    Install these packages in Fedora or similar packages in other distro.
+    `dnf install texlive-wasysym  texlive-tcolorbox tikzfill texlive-tikzfill texlive-wasy-type1.noarch texlive-wasysym.noarch`
 
 #### Style Guide 
+
 - Use `columns` environment to create columns in your slides.
     ```latex
         \begin{columns}

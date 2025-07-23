@@ -1,12 +1,5 @@
 \documentclass{beamer}
-\usepackage{listings}
-\usepackage{microtype}
-\usepackage{textcomp}
-\usepackage{lmodern}
-\usepackage{fancybox}
-\usepackage{wasysym}
-\usepackage{tcolorbox}
-\usepackage{tikz}
+\usepackage{listings,microtype,textcomp,lmodern,fancybox,wasysym,tcolorbox,tikz,fontspec}
 \usepackage[T1]{fontenc}
 %%%%%%%%%%Modify default Color and style%%%%%%%%%%%%%%%%%%%%%%%%%%
 % defaults
@@ -16,7 +9,6 @@
 \usepackage{xltxtra}
 \usepackage{polyglossia}
 \setsansfont[BoldFont={FiraCode Nerd Font, Bold}]{FiraCode Nerd Font}
-
 \setbeamerfont{frametitle}{size=\Large,series=\bfseries}
 \setbeamerfont{title}{size=\Large,series=\bfseries}
 % set frametitle shadow and rounded in the buttom corners 
@@ -47,8 +39,8 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Very Very long	Title of the Presentation that is so long that it will not fit in one line and will be wrapped to the next line}
-\subtitle{Subtitle of the Presentation that is also very long and will be wrapped to the next line if it is too long}
+\title{Very Very long	Title of the Presentation that is so long}
+\subtitle{Subtitle of the Presentation that is also very long}
 \author{ author 1 \\ author 2 \\ author 3 \\ \vspace{0.5cm}}
 
 \institute{Sample  University  \\ \vspace{1cm}
@@ -68,6 +60,11 @@
 		\textbf{more} topics that are not listed here but will be discussed in the presentation.
 	\end{tcolorbox}
 \end{frame}
+
+
+\textsf{This is a sample text in Fira Code Nerd Font.}
+\textsf{\textbf{This is bold text in Fira Code Nerd Font.}}
+
 
 \section{Introduction}
 
